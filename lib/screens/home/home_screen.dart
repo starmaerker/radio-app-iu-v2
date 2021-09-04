@@ -2,20 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:radio_app_v2/constants.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);  
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text(
-            'Radio 4 IU',
-          ),
-        ),
-        backgroundColor: secondaryColor,
-      ),
-      body: Column(
+    return Column(
         //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Expanded(
@@ -78,7 +69,9 @@ class HomeScreen extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 24, color: primaryColor),
                               ),
-                              SizedBox(height: defaultPadding,),
+                              SizedBox(
+                                height: defaultPadding,
+                              ),
                               Text(
                                 'Enigma',
                                 style: TextStyle(
@@ -86,7 +79,9 @@ class HomeScreen extends StatelessWidget {
                                     color: primaryColor,
                                     fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(height: defaultPadding / 2,),
+                              SizedBox(
+                                height: defaultPadding / 2,
+                              ),
                               Text(
                                 'Dolphin',
                                 style: TextStyle(
@@ -106,7 +101,9 @@ class HomeScreen extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 18, color: Colors.amber.shade100),
                               ),
-                              SizedBox(height: defaultPadding,),
+                              SizedBox(
+                                height: defaultPadding,
+                              ),
                               Text(
                                 'Ozzy',
                                 style: TextStyle(
@@ -114,7 +111,9 @@ class HomeScreen extends StatelessWidget {
                                     color: Colors.amber.shade100,
                                     fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(height: defaultPadding / 2,),
+                              SizedBox(
+                                height: defaultPadding / 2,
+                              ),
                               Text(
                                 'Papa',
                                 style: TextStyle(
@@ -133,8 +132,7 @@ class HomeScreen extends StatelessWidget {
               );
             }),
           ),
-        ],
-      ),
+        ],     
     );
   }
 }

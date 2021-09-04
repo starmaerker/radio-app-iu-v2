@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:radio_app_v2/screens/tabs/tabs_screen.dart';
 
 import 'constants.dart';
 import 'screens/home/home_screen.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
               bodyText2: TextStyle(color: bodyTextColor),
             ),
       ),
-      home: HomeScreen(),
+      home: TabsScreen(),
     );
   }
 }
