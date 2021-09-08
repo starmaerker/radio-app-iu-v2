@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:radio_app_v2/screens/tabs/tabs_screen.dart';
 
-import 'constants.dart';
+import 'utilities/constants.dart';
 import 'screens/home/home_screen.dart';
 
 void main() async {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:radio_app_v2/constants.dart';
+import 'package:radio_app_v2/utilities/constants.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);  
@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
               return Stack(
                 children: [
                   Image.asset(
-                    'assets/images/music_note.png',
+                    'assets/images/paper.jpg',
                     width: constraints.maxWidth,
                     fit: BoxFit.cover,
                     color: darkColor,
@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                               Text(
                                 'Aktuell läuft:',
                                 style: TextStyle(
-                                    fontSize: 24, color: primaryColor),
+                                    fontSize: 30, color: primaryColor),
                               ),
                               SizedBox(
                                 height: defaultPadding,
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                               Text(
                                 'Enigma',
                                 style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 24,
                                     color: primaryColor,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                               Text(
                                 'Dolphin',
                                 style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 24,
                                     color: primaryColor,
                                     fontWeight: FontWeight.bold,
                                     fontStyle: FontStyle.italic),
@@ -99,7 +99,7 @@ class HomeScreen extends StatelessWidget {
                               Text(
                                 'Vorher lief:',
                                 style: TextStyle(
-                                    fontSize: 18, color: Colors.amber.shade100),
+                                    fontSize: 24, color: Colors.amber.shade100),
                               ),
                               SizedBox(
                                 height: defaultPadding,
@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                               Text(
                                 'Ozzy',
                                 style: TextStyle(
-                                    fontSize: 16,
+                                    fontSize: 20,
                                     color: Colors.amber.shade100,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -117,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                               Text(
                                 'Papa',
                                 style: TextStyle(
-                                    fontSize: 16,
+                                    fontSize: 20,
                                     color: Colors.amber.shade100,
                                     fontWeight: FontWeight.bold,
                                     fontStyle: FontStyle.italic),

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:radio_app_v2/screens/feedback/feedback_screen.dart';
 import 'package:radio_app_v2/screens/home/home_screen.dart';
-import 'package:radio_app_v2/screens/music/music_screen.dart';
+import 'package:radio_app_v2/screens/music/wish_screen.dart';
 
-import '../../constants.dart';
+import '../../utilities/constants.dart';
 
 class TabsScreen extends StatefulWidget {
-  const TabsScreen({ Key? key }) : super(key: key);
+  const TabsScreen({Key? key}) : super(key: key);
 
   @override
   _TabsScreenState createState() => _TabsScreenState();
@@ -16,7 +16,7 @@ class TabsScreen extends StatefulWidget {
 class _TabsScreenState extends State<TabsScreen> {
   final List<Map<String, Object>> _pages = [
     {'page': HomeScreen(), 'title': 'Radio 4 IU'},
-    {'page': MusicScreen(), 'title': 'Musikwunsch'},
+    {'page': WishScreen(), 'title': 'Musikwunsch'},
     {'page': FeedbackScreen(), 'title': 'Feedback'}
   ];
 
@@ -28,15 +28,16 @@ class _TabsScreenState extends State<TabsScreen> {
     });
   }
 
-
   @override
-
   Widget build(BuildContext context) {
+    
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
         title: Center(
           child: Text(
-            'Radio 4 IU', style: TextStyle(color: primaryColor),
+            _pages[_selectedIndex]['title'] as String,
+            style: TextStyle(color: primaryColor),
           ),
         ),
         backgroundColor: secondaryColor,
