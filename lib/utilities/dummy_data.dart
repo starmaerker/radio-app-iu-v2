@@ -1,6 +1,6 @@
-import 'package:radio_app/models/feedback.dart';
-import 'package:radio_app/models/moderator.dart';
-import 'package:radio_app/models/title.dart';
+import 'package:radio_app_v2/models/feedback.dart';
+import 'package:radio_app_v2/models/moderator.dart';
+import 'package:radio_app_v2/models/title.dart';
 
 const DUMMY_TITLES = const [
   const Title(id: 1, title: 'Resurgam', artist: 'Anne Dudley', album: 'Poldark'),

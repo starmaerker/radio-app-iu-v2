@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:radio_app_v2/generated/l10n.dart';
 import 'package:radio_app_v2/utilities/constants.dart';
 
 class SongTextField extends StatefulWidget {
@@ -23,13 +24,20 @@ class _SongTextFieldState extends State<SongTextField> {
   Widget build(BuildContext context) {
     String? inputText;
 
-    return TextField(
+    return TextFormField(
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return S.of(context).error;
+        }
+        return null;
+      },
       controller: myController,
       keyboardType: TextInputType.multiline,
       minLines: 1,
       maxLines: widget.multiLines,
       style: TextStyle(color: Colors.white),
       decoration: InputDecoration(
+        errorStyle: TextStyle(color: Colors.white),
         contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
         filled: true,
         fillColor: secondaryColor,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:radio_app_v2/utilities/constants.dart';
+import 'package:radio_app_v2/generated/l10n.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);  
@@ -25,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                           SizedBox(
                             height: defaultPadding / 2,
                           ),
-                          Text('Ihr Moderator:',
+                          Text(S.of(context).moderator,
                               style: TextStyle(
                                   letterSpacing: 2,
                                   fontSize: 24,
@@ -52,6 +53,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/paper.jpg',
+                    height: constraints.maxHeight,
                     width: constraints.maxWidth,
                     fit: BoxFit.cover,
                     color: darkColor,
@@ -59,18 +61,18 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Center(
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
+                        SizedBox(height: defaultPadding / 2,),
                         Container(
                           child: Column(
                             children: [
                               Text(
-                                'Aktuell läuft:',
+                                S.of(context).aktuell,
                                 style: TextStyle(
                                     fontSize: 30, color: primaryColor),
                               ),
                               SizedBox(
-                                height: defaultPadding,
+                                height: defaultPadding / 2,
                               ),
                               Text(
                                 'Enigma',
@@ -93,16 +95,17 @@ class HomeScreen extends StatelessWidget {
                             ],
                           ),
                         ),
+                        SizedBox(height: defaultPadding,),
                         Container(
                           child: Column(
                             children: [
                               Text(
-                                'Vorher lief:',
+                                S.of(context).vorher,
                                 style: TextStyle(
                                     fontSize: 24, color: Colors.amber.shade100),
                               ),
                               SizedBox(
-                                height: defaultPadding,
+                                height: defaultPadding / 2,
                               ),
                               Text(
                                 'Ozzy',

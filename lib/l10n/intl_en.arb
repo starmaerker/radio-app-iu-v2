@@ -1,0 +1,18 @@
+{
+    "greeting": "Hello",
+    "tab_music_wish": "Music Request",
+    "moderator": "Your Moderator:",
+    "aktuell": "Currently Running:",
+    "vorher": "Previous Song:",
+    "wunschtitel": "Desired Title",
+    "interpret": "Artist",
+    "mw_senden": "Send Music Request",
+    "mw_gesendet": "Music Request Sent.",
+    "kommentar": "Comment (max 150 characters)",
+    "name": "Your Name",
+    "fb_senden": "Send Feedback",
+    "fb_gesendet": "Feedback Sent.",
+    "pl_Wertung": "Current Playlist Rating",
+    "m_Wertung": "Current Moderator Rating",
+    "error": "Please Enter Some Text"  
+}

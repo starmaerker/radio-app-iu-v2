@@ -1,5 +1,5 @@
-import 'package:radio_app/models/moderator.dart';
-import 'package:radio_app/models/title.dart';
+import 'package:radio_app_v2/models/moderator.dart';
+import 'package:radio_app_v2/models/title.dart';
 
 class Feedback {
   final int id;

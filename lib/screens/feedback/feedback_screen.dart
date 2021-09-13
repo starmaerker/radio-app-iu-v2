@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:radio_app_v2/generated/l10n.dart';
 import 'package:radio_app_v2/utilities/constants.dart';
 import 'package:radio_app_v2/screens/music/components/song_text_field.dart';
 
@@ -93,23 +94,23 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 50),
-                child: SongTextField('Kommentar (max 150 Zeichen)', 10),
+                child: SongTextField(S.of(context).kommentar, 10),
               ),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
-                child: SongTextField('Dein Name'),
+                child: SongTextField(S.of(context).name),
               ),
               ElevatedButton(
                 onPressed: () {
                   showDialog(
                             context: context,
                             builder: (context) {
-                              return AlertDialog(content: Text('Feedback gesendet.'));
+                              return AlertDialog(content: Text(S.of(context).fb_gesendet));
                             });
                 },
                 child: Text(
-                  'Feedback senden',
+                  S.of(context).fb_senden,
                   style: TextStyle(color: secondaryColor),
                 ),
                 style: ButtonStyle(
@@ -119,7 +120,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                 height: 20,
               ),
               Text(
-                'Aktuelle Playlist Wertung',
+                S.of(context).pl_Wertung,
                 style: TextStyle(
                     color: Colors.amber.shade100,
                     fontWeight: FontWeight.bold,
@@ -146,7 +147,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                 height: 20,
               ),
               Text(
-                'Aktuelle Moderator Wertung',
+                S.of(context).m_Wertung,
                 style: TextStyle(
                     color: Colors.amber.shade100,
                     fontWeight: FontWeight.bold,

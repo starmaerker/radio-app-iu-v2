@@ -1,0 +1,18 @@
+{
+    "greeting": "Guten Tag!",
+    "tab_music_wish": "Musikwunsch",
+    "moderator": "Ihr Moderator:",
+    "aktuell": "Aktuell läuft:",
+    "vorher": "Vorheriger Titel:",
+    "wunschtitel": "Wunschtitel",
+    "interpret": "Interpret",
+    "mw_senden": "Musikwunsch senden",
+    "mw_gesendet": "Musikwunsch gesendet.",
+    "kommentar": "Kommentar (max 150 Zeichen)",
+    "name": "Dein Name",
+    "fb_senden": "Feedback senden",
+    "fb_gesendet": "Feedback gesendet.",
+    "pl_Wertung": "Aktuelle Playlist Wertung",
+    "m_Wertung": "Aktuelle Moderator Wertung",
+    "error": "Bitte geben Sie einen Text ein."
+}
