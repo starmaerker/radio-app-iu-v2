@@ -47,7 +47,7 @@ class _WishScreenState extends State<WishScreen> {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Form(
+              child: Form(                
                 key: _formKey,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -58,6 +58,7 @@ class _WishScreenState extends State<WishScreen> {
                       SongTextField(S.of(context).wunschtitel),
                       SongTextField(S.of(context).interpret),
                       ElevatedButton(
+                        key: Key('buttonKey'),
                         // onPressed: () {
                         //   showDialog(
                         //       context: context,
@@ -66,10 +67,7 @@ class _WishScreenState extends State<WishScreen> {
                         //       });
                         // },
                         onPressed: () {
-                          // Validate returns true if the form is valid, or false otherwise.
                           if (_formKey.currentState!.validate()) {
-                            // If the form is valid, display a snackbar. In the real world,
-                            // you'd often call a server or save the information in a database.
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(content: Text(S.of(context).mw_gesendet),duration: Duration(milliseconds: 750),),
                             );

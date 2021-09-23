@@ -41,7 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "pl_Wertung":
             MessageLookupByLibrary.simpleMessage("Aktuelle Playlist Wertung"),
         "tab_music_wish": MessageLookupByLibrary.simpleMessage("Musikwunsch"),
-        "vorher": MessageLookupByLibrary.simpleMessage("Vorheriger Titel:"),
+        "vorher": MessageLookupByLibrary.simpleMessage("Vorherige Titel:"),
         "wunschtitel": MessageLookupByLibrary.simpleMessage("Wunschtitel")
       };
 }

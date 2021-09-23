@@ -90,10 +90,10 @@ class S {
     );
   }
 
-  /// `Previous Song:`
+  /// `Previous Songs:`
   String get vorher {
     return Intl.message(
-      'Previous Song:',
+      'Previous Songs:',
       name: 'vorher',
       desc: '',
       args: [],
