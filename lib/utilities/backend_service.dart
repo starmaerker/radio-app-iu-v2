@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:radio_app_v2/utilities/dummy_data.dart';
 import 'package:radio_app_v2/models/feedback.dart';
 import 'package:radio_app_v2/models/moderator.dart';
@@ -8,11 +10,9 @@ import 'package:radio_app_v2/models/title.dart';
 /// Die Klasse implementiert Stubs für alle Systemschnittstellen zu den Systemen
 /// des Senders.
 class BackendService {
+  // TODO: to implement
   /// Liefert Informationen über die Playlist und den Moderator
-  getLiveUpdate() {}
-
-  // noch nicht implementiert
-  getWishes() {}
+  getLiveUpdate() {} 
 
   /// Sendet eine Bewertung zur Datenbank.
   Feedback sendFeedback(Feedback feedback) {

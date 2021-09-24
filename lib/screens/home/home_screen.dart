@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                   height: constraints.maxHeight,
                   width: constraints.maxWidth,
                   fit: BoxFit.cover,
-                  color: darkColor,
+                  color: darkColor,                  
                   colorBlendMode: BlendMode.overlay,
                 ),
                 Center(
@@ -113,7 +113,7 @@ class HomeScreen extends StatelessWidget {
                               },
                               icon: Icon(
                                 Icons.arrow_left,
-                                color: Colors.black87,
+                                color: Colors.amber.shade50,
                                 size: 75,
                               ),
                               label: Text(
@@ -127,7 +127,7 @@ class HomeScreen extends StatelessWidget {
                                   S.of(context).vorher,
                                   style: TextStyle(
                                       fontSize: 24,
-                                      color: Colors.black87,
+                                      color: Colors.amber.shade50,
                                       fontWeight: FontWeight.w700),
                                 ),
                                 SizedBox(
@@ -137,7 +137,7 @@ class HomeScreen extends StatelessWidget {
                                   'Ozzy',
                                   style: TextStyle(
                                       fontSize: 20,
-                                      color: Colors.black87,
+                                      color: Colors.amber.shade50,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(
@@ -147,7 +147,7 @@ class HomeScreen extends StatelessWidget {
                                   'Papa',
                                   style: TextStyle(
                                       fontSize: 20,
-                                      color: Colors.black87,
+                                      color: Colors.amber.shade50,
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FontStyle.italic),
                                 ),
@@ -159,7 +159,7 @@ class HomeScreen extends StatelessWidget {
                               },
                               icon: Icon(
                                 Icons.arrow_right,
-                                color: Colors.black87,
+                                color: Colors.amber.shade50,
                                 size: 75,
                               ),
                               label: Text(
