@@ -5,6 +5,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:radio_app_v2/generated/l10n.dart';
 import 'package:radio_app_v2/utilities/constants.dart';
 import 'package:radio_app_v2/screens/music/components/song_text_field.dart';
+import '../../utilities/backend_service.dart';
 
 class FeedbackScreen extends StatefulWidget {
   final randomInt = Random().nextInt(5);
@@ -134,6 +135,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                 direction: Axis.horizontal,
                 allowHalfRating: true,
                 itemCount: 5,
+                initialRating: BackendService.averagePlaylistStars(),
                 itemPadding: EdgeInsets.symmetric(horizontal: 4),
                 itemBuilder: (context, _) => Icon(
                   Icons.star_border_purple500,
@@ -161,6 +163,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                 direction: Axis.horizontal,
                 allowHalfRating: true,
                 itemCount: 5,
+                initialRating: BackendService.averageModeratorStars(),
                 itemPadding: EdgeInsets.symmetric(horizontal: 4),
                 itemBuilder: (context, _) => Icon(
                   Icons.star_border_purple500,
