@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:radio_app_v2/generated/l10n.dart';
 import 'package:radio_app_v2/utilities/constants.dart';
-import 'package:radio_app_v2/screens/music/components/song_text_field.dart';
+import 'package:radio_app_v2/components/song_text_field.dart';
 import '../../utilities/backend_service.dart';
 
 class FeedbackScreen extends StatefulWidget {

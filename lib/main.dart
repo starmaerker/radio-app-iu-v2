@@ -6,7 +6,6 @@ import 'package:radio_app_v2/generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'utilities/constants.dart';
-import 'screens/home/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

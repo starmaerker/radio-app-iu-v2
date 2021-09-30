@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:radio_app_v2/screens/music/wish_screen.dart';
 import 'package:radio_app_v2/utilities/constants.dart';
 import 'package:radio_app_v2/generated/l10n.dart';
 

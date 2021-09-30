@@ -9,40 +9,49 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:radio_app_v2/main.dart';
-import 'package:radio_app_v2/screens/feedback/feedback_screen.dart';
 import 'package:radio_app_v2/screens/home/home_screen.dart';
-import 'package:radio_app_v2/screens/tabs/tabs_screen.dart';
 import 'package:radio_app_v2/generated/l10n.dart';
 
-
-
 void main() {
-  testWidgets('Test HomeScreen Widget with german locales', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MaterialApp(
-      supportedLocales: S.delegate.supportedLocales,
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        S.delegate,
-      ],
-      locale: Locale('de'),
-      home: HomeScreen()));
-    await tester.pump();
+  group('', () {
+    testWidgets('Test HomeScreen Widget with german locales',
+        (WidgetTester tester) async {
+      await tester.pumpWidget(MaterialApp(
+          supportedLocales: S.delegate.supportedLocales,
+          localizationsDelegates: [
+            GlobalMaterialLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            S.delegate,
+          ],
+          locale: Locale('de'),
+          home: HomeScreen()));
+      await tester.pump();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('Enigma'), findsOneWidget);
-    //expect(find.byIcon(Icons.arrow_left), findsOneWidget);
-    //expect(find.text('1'), findsNothing);
+      expect(find.text('Aktuell läuft:'), findsOneWidget);
+      expect(find.byIcon(Icons.arrow_right), findsOneWidget);
+      expect(find.text('Aktuell läuft'), findsNothing);
+    });
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    // await tester.tap(find.byIcon(Icons.add));
-    // await tester.pump();
+  group('', () {
+    testWidgets('Test HomeScreen Widget with english locales',
+        (WidgetTester tester) async {
+      await tester.pumpWidget(MaterialApp(
+          supportedLocales: S.delegate.supportedLocales,
+          localizationsDelegates: [
+            GlobalMaterialLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            S.delegate,
+          ],
+          locale: Locale('en'),
+          home: HomeScreen()));
+      await tester.pump();
 
-    // Verify that our counter has incremented.
-    // expect(find.text('0'), findsNothing);
-    // expect(find.text('1'), findsOneWidget);
+      expect(find.text('Previous Songs:'), findsOneWidget);
+      expect(find.byIcon(Icons.arrow_left), findsOneWidget);
+      expect(find.text('Previous Songs'), findsNothing);
+    });
   });
 }

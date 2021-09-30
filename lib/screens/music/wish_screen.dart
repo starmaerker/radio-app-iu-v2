@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:radio_app_v2/generated/l10n.dart';
 import 'package:radio_app_v2/utilities/constants.dart';
 
-import 'components/song_text_field.dart';
+import '../../components/song_text_field.dart';
 
 class WishScreen extends StatefulWidget {
   const WishScreen({Key? key}) : super(key: key);

@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:radio_app_v2/utilities/dummy_data.dart';
 import 'package:radio_app_v2/models/feedback.dart';
 import 'package:radio_app_v2/models/moderator.dart';
 import 'package:radio_app_v2/models/music_wish.dart';
@@ -9,9 +8,18 @@ import 'package:radio_app_v2/models/title.dart';
 /// Die Klasse implementiert Stubs für alle Systemschnittstellen zu den Systemen
 /// des Senders.
 class BackendService {
-  // TODO: to implement
   /// Liefert Informationen über die Playlist und den Moderator
-  static getLiveUpdate() {}
+  static getLiveUpdate(
+    Moderator mod,
+    Title presentTitle,
+    List<Title> pastTitles,
+  ) {
+    return {
+      'Moderator': '${mod.firstName} ${mod.surName}',
+      'Titel': presentTitle,
+      'Titelliste': pastTitles,
+    };
+  }
 
   /// Sendet eine Bewertung zur Datenbank.
   static Feedback sendFeedback(Feedback feedback) {
